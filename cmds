@@ -1,0 +1,83 @@
+#TO IMPORT LIBRARIES
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+.
+.
+.
+.
+MOUNT DRIVE...
+from google.colab import drive
+drive.mount(‘/content/drive’)
+
+then...
+
+import pandas as pd
+ df = pd.read_csv("file_path")
+print(df)
+.
+.
+.
+.
+
+#TO VIEW DATA TYPES OF COLUMNS
+df.dtypes
+
+#TO SEE INFO OF THE DATASET
+df.info()
+
+#TO SEE MEAN ETC STATS OF THE DATASET
+df.describe()
+
+#TO SEE NUMBER OF NULL ENTRIES IN EACH COLUMN
+df.isnull().sum()
+
+DROPPING NULL VALUE - 
+PY CODE - 
+#drop all null values
+#df.dropna()
+#but i wont drop here because that basically removes half of the entries
+
+#REPLACE ALL NULL VALUES WITH MEAN
+#print(df.mean(numeric_only=True)) ignores all non numeric values while calculating mean
+column_means = df.mean(numeric_only=True)
+df = df.fillna(column_means)
+
+
+
+#CONVERTING CATEGORICAL VARIABLES INTO QUANTITATIVE VARIABLES
+df['column_name'].replace(['male', 'female'],
+                        [0, 1], inplace=True)
+                        
+                        
+.
+.
+.
+
+#TYPE CONVERSION
+df.column_name = df.column_name.astype('int64')
+
+...here int64 is the data type we want to convert the column to
+int64, float64, object, bool, datetime64
+
+.
+.
+.
+.
+.
+.
+
+TO DETERMINE OUTLIERS
+#make a boxplot
+sns.boxplot(df['column_name'])
+
+#SEE THE OUTLIER POSI
+print(np.where(df['column_name']>posi))
+
+#DROP ROWS ACC TO ROW NUMBERdf.drop( row_no , inplace = True) 
+
+#to remove multi rows at once 
+#df.drop( [18,56,73,96] , inplace = True) 
+
+
