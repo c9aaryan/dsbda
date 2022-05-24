@@ -1,0 +1,21 @@
+from google.colab import files
+uploaded = files.upload()
+
+This opens a option to upload files. Clickon it, select the file to upload, and then type this -
+
+import pandas as pd
+import io
+
+df = pd.read_csv(io.BytesIO(uploaded['file.csv']))
+print(df)
+
+
+2nd way... Easier
+
+It is the easiest way to upload a CSV file in Colab.
+For this go to the dataset in your GitHub repository, and then click on “View Raw”.
+Copy the link to the raw dataset and pass it as a parameter to the read_csv() in pandas to get the dataframe. 
+
+url = 'copied_raw_github_link'
+df = pd.read_csv(url)
+
