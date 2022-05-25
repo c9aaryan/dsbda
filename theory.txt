@@ -1,0 +1,72 @@
+LINEAR REGRESSION
+In the most simple words, Linear Regression is the supervised Machine Learning model
+in which the model finds the best fit linear line between the independent and dependent variable 
+i.e it finds the linear relationship between the dependent and independent variable.
+
+
+
+LOGISTIC REGRESSION
+What is logistic regression? Logistic regression is an example of supervised learning. It is used
+to calculate or predict the probability of a binary (yes/no) event occurring. An example of logistic regression could be 
+applying machine learning to determine if a person is likely to be infected with COVID-19 or not.
+
+
+CONFUSION MATRIX
+
+TP FP
+FN TN
+
+Accuracy (all correct / all) = TP + TN / TP + TN + FP + FN
+Misclassification (all incorrect / all) = FP + FN / TP + TN + FP + FN
+Precision (true positives / predicted positives) = TP / TP + FP
+Sensitivity aka Recall (true positives / all actual positives) = TP / TP + FN
+Specificity (true negatives / all actual negatives) =TN / TN + FP
+
+
+
+NAIVE BAYES
+Naive Bayes is a classification algorithm for binary (two-class) and multi-class classification problems. 
+The technique is easiest to understand when described using binary or categorical input values.
+
+It is called naive Bayes or idiot Bayes because the calculation of the probabilities for each hypothesis 
+are simplified to make their calculation tractable. Rather than attempting to calculate the values of each
+attribute value P(d1, d2, d3|h), they are assumed to be conditionally independent given the target value 
+and calculated as P(d1|h) * P(d2|H) and so on.
+
+This is a very strong assumption that is most unlikely in real data, i.e. that the attributes do not interact.
+Nevertheless, the approach performs surprisingly well on data where this assumption does not hold.
+
+
+
+
+NLP
+TOKENIZATION
+Tokenization is breaking the raw text into small chunks. Tokenization breaks the raw text into words, 
+sentences called tokens. These tokens help in understanding the context or developing the model for the NLP. 
+The tokenization helps in interpreting the meaning of the text by analyzing the sequence of the words.
+
+POS tagging
+What is Part-of-speech (POS) tagging ? It is a process of converting a sentence to forms – list of words,
+list of tuples (where each tuple is having a form (word, tag)). 
+The tag in case of is a part-of-speech tag, and signifies whether the word is a noun, adjective, verb, and so on.
+
+STOP WORDS REMOVAL
+Stop word removal is one of the most commonly used preprocessing steps across different NLP applications.
+The idea is simply removing the words that occur commonly across all the documents in the corpus. 
+Typically, articles and pronouns are generally classified as stop words.
+
+STEMMING
+Stemming is the process of reducing a word to its word stem that affixes to suffixes and prefixes or to the roots of words known as a lemma.
+Stemming is important in natural language understanding (NLU) and natural language processing (NLP).
+ex- stem of the words eating, eat, eaten = eat
+
+LEMMETIZATION
+Lemmatization usually refers to doing things properly with the use of a 
+vocabulary and morphological analysis of words, normally aiming to remove 
+inflectional endings only and to return the base or dictionary form of a word, which is known as the lemma .
+example - runs, running, ran are all forms of the word run, therefore run is the lemma of all these words.
+
+INVERSE DOC FREQUENCY
+The inverse document frequency is a measure of whether a term is common or rare in a given document corpus. 
+It is obtained by dividing the total number of documents by the number of documents containing the term in the corpus.
+
