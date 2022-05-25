@@ -1,0 +1,37 @@
+MAPREDUCE
+
+Hadoop is an open-source software framework written in Java and comprises of two parts,
+which are the storage part and the other being the data processing part. The storage part
+is called the Hadoop Distributed File System (HDFS) and the processing part is called MapReduce.
+
+We now look into the advantages that are offered by Hadoop MapReduce programming.
+scalability, cost effective, flexible, fast, security, parallel processing etc
+
+
+SCALA
+Features of Scala
+There are following features of scala:
+
+Type inference
+Singleton object
+Immutability
+Lazy computation
+Case classes and Pattern matching
+Concurrency control
+String interpolation
+Higher order function
+Traits
+Rich collection set
+
+Scala is a strong statically typed general-purpose programming language which supports both object-oriented programming and functional programming. 
+Designed to be concise, many of Scala's design decisions are aimed to address criticisms of Java.
+Scala is used in Data processing, distributed computing, and web development. It powers the data engineering infrastructure of many companies.
+
+
+scikit learn
+Scikit-learn is an indispensable part of the Python machine learning toolkit at JPMorgan.
+It is very widely used across all parts of the bank for classification, predictive analytics, and very many other machine learning tasks.
+
+
+
+HADOOP
